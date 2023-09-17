@@ -1,0 +1,14 @@
+// Font
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+//color
+$primary: rgb(163, 163, 163);
+$secondary: #004d6e;
+$dark: rgb(236, 236, 236);
+$danger: #8400ff;
+
+//form
+$input-border-radius: 30px;
+
+
+@import"../node_modules/bootstrap/scss/bootstrap";

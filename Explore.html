@@ -1,0 +1,744 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <!-- css files -->
+    <link rel="stylesheet" href="css/Explore.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <link rel="icon" href="images/logo.png">
+    <title>Triber Explore/Explore</title>
+ </head>
+ <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">Triber</a>
+        <!-- toggler btn -->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- slidBar -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <i type="button" class="fas fa-times nav-close-btn" data-bs-dismiss="offcanvas" aria-label="close"></i>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav m-auto d-flex justify-content-center align-items-center gap-3">
+              <li class="nav-item">
+                <a class="nav-link text-white nav_items" href="index.html">Home.</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white nav_items" href="About.html">About.</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white nav_items" href="Gallery.html">Gallery.</a>
+              </li>                 
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar finished -->
+
+    <!-- Main -->
+    <secction class="hero">
+      <div class="bg-img">
+        <div class="text-container">
+          <h1 class="text-xxl">you are on the right place book your ticket now!</h1>
+        </div> 
+      </div> 
+    </secction>
+    <!-- main section finished -->
+
+    <!-- search -->
+    <section class="search">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="search-box">
+          <form class="container">
+            <h1 class="text-start pt-5 fw-bolder">Find Your Tour</h1>
+            <br>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fat fa-location-check"></i></span>
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floating-input1" placeholder="From">
+                    <label for="floating-input1">From</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fat fa-location-arrow"></i></span>
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floating-input1" placeholder="To">
+                    <label for="floating-input1">To</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fat fa-calendar-arrow-up"></i></span>
+                  <div class="form-floating">
+                    <input type="date" class="form-control" id="floating-input1" placeholder="Date">
+                    <label for="floating-input1">Date</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fat fa-calendar-check"></i></span>
+                  <div class="form-floating">
+                    <select class="form-select">
+                      <option selected></option>
+                      <option value="1">2 days</option>
+                      <option value="2">5 days</option>
+                      <option value="3">1 week</option>
+                      <option value="4">2 week</option>
+                    </select>
+                    <label for="floating-input1">Trip Duration</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fat fa-user"></i></span>
+                  <div class="form-floating">
+                    <input type="number" class="form-control" id="floating-input3" placeholder="Adults" min="1">
+                    <label for="floating-input3">Adults</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fat fa-child"></i></span>
+                  <div class="form-floating">
+                    <input type="number" class="form-control" id="floating-input3" placeholder="Childern" min="0">
+                    <label for="floating-input3">Childern</label>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <br>
+              <button type="submit" class="search-btn">Search</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- search finished -->
+
+    <!-- packages -->
+    <section class="packages">
+      <!-- packages -->
+      <div class="packages pb-5">
+        <div class="container">
+          <h1 class="text-center fw-bolder">
+            Packages
+          </h1>
+          <hr class="w-25 m-auto">
+        </div>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="package-box mt-3 mb-3 d-flex flex-column align-items-center justify-content-center">
+                <img src="images/explore-1.png" alt="img" class="package-img">
+                <div class="package-name">
+                  Holiday Packages
+                </div>
+                <a href="#package-brief" type="button" class="btn text-bg-dark ps-5 pe-5 mt-3">Show</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="package-box mt-3 mb-3 d-flex flex-column align-items-center justify-content-center">
+                <img src="images/explore-2.png" alt="img" class="package-img">
+                <div class="package-name">
+                  Villa Stay
+                </div>
+                <a href="#package-brief" type="button" class="btn text-bg-dark ps-5 pe-5 mt-3">Show</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="package-box mt-3 mb-3 d-flex flex-column align-items-center justify-content-center">
+                <img src="images/explore-3.png" alt="img" class="package-img">
+                <div class="package-name">
+                  World Tour
+                </div>
+                <a href="#package-brief" type="button" class="btn text-bg-dark ps-5 pe-5 mt-3">Show</a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="package-box mt-3 mb-3 d-flex flex-column align-items-center justify-content-center">
+                <img src="images/explore-4.png" alt="img" class="package-img">
+                <div class="package-name">
+                  Adventures Trip
+                </div>
+                <a href="#package-brief" type="button" class="btn text-bg-dark ps-5 pe-5 mt-3">Show</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- packages finished -->
+
+    <!-- packages brief -->
+    <!-- packages brief -->
+    <div class="packages-brief">
+      <div class="container pt-5 pb-5" id="package-brief">
+        <div class="row">
+          <div class="col-12">
+            <div>
+              <ul class="nav nav-tabs">
+                <li class="nav-item"><a href="#trending" class="nav-link active" data-bs-toggle="tab">Trending</a></li>
+                <li class="nav-item"><a href="#holiday" class="nav-link" data-bs-toggle="tab">Holiday Packages</a></li>
+                <li class="nav-item"><a href="#stay" class="nav-link" data-bs-toggle="tab">Villa Stay</a></li>
+                <li class="nav-item"><a href="#tour" class="nav-link" data-bs-toggle="tab">World Tour</a></li>
+                <li class="nav-item"><a href="#trip" class="nav-link" data-bs-toggle="tab">Adventures Trip</a></li>
+              </ul>
+              <div class="tab-content">
+                <!-- tab 1 -->
+                <div id="trending" class="tab-pane fade in show active">
+                  <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-A.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-B.jpeg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-C.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-D.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- tab 2 -->
+                <div id="holiday" class="tab-pane fade">
+                  <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-A.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-B.jpeg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-C.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-D.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- tab 3 -->
+                <div id="stay" class="tab-pane fade">
+                  <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-A.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-B.jpeg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-C.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-D.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- tap 4 -->
+                <div id="tour" class="tab-pane fade">
+                  <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-A.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-B.jpeg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-C.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-D.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- tab 5 -->
+                <div id="trip" class="tab-pane fade">
+                  <div class="row">
+                    <!-- card 1 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-A.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-B.jpeg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-C.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="col-md-3 mt-3 mb-3">
+                      <div class="card border-0 position-relative overflow-hidden">
+                        <img src="images/explore-D.jpg" alt="img" class="card-img"> 
+                        <div class="card-body">
+                          <h3 class="card-title text-white">
+                            Tbilisi os, Georgia
+                          </h3>
+                          <p class="card-sub-title text-dark opacity-75">
+                            City of Culture
+                          </p>
+                          <p class="card-info text-white">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            In excepturi magnam, dicta rerum reprehenderit placeat sequi
+                            eos eius laborum dolore.
+                          </p>
+                          <button type="button" class="btn border-0 bg-black text-white">Book Now</button>
+                        </div>                      
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mt-5">
+            <h3 class="text-white text-start">
+              Subscribe to our newsletter
+            </h3>
+            <p class="footer_main_para text-start">
+              stay up to date with our news and offers
+            </p>
+          </div>
+          <div class="col-md-6 mt-5">
+            <input type="email" name="email" placeholder="E-mail" class="footer_input">
+            <button class="footer_btn">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mt-5">
+            <img src="images/logo.png" alt="img" class="w-25">
+          </div>
+          <div class="col-md-2 mt-5">
+           <h4 class="text-white mb-4">
+            Product
+           </h4>
+           <div class="d-flex flex-column">
+            <span class="footer_text">Tour</span>
+            <span class="footer_text">Travel</span>
+            <span class="footer_text">Guideing</span>
+            <span class="footer_text">Trip Management</span>
+            <span class="footer_text">Travel partner</span>
+           </div>
+          </div>
+          <div class="col-md-2 mt-5">
+            <h4 class="text-white mb-4">
+             Resources
+            </h4>
+            <div class="d-flex flex-column">
+             <span class="footer_text">Support</span>
+             <span class="footer_text">Sitemap</span>
+             <span class="footer_text">Newsletter</span>
+             <span class="footer_text">Help Center</span>
+             <span class="footer_text">Investors</span>
+            </div>
+          </div>
+          <div class="col-md-2 mt-5">
+            <h4 class="text-white mb-4">
+             Company
+            </h4>
+            <div class="d-flex flex-column">
+             <span class="footer_text">About</span>
+             <span class="footer_text">Blog</span>
+             <span class="footer_text">Careers</span>
+             <span class="footer_text">Press</span>
+             <span class="footer_text">Contact</span>
+            </div>
+          </div>
+          <div class="col-md-2 mt-5">
+            <h4 class="text-white mb-4">
+             Legal
+            </h4>
+            <div class="d-flex flex-column">
+             <span class="footer_text">Terms</span>
+             <span class="footer_text">Privacy</span>
+             <span class="footer_text">Cookies</span>
+             <span class="footer_text">License</span>
+             <span class="footer_text">Contact</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="w-75 m-auto mt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mt-5 mb-5 text-center">
+            <div class="social">
+              <i class="fab fa-instagram footer_icon"></i>
+              <i class="fab fa-linkedin-in footer_icon"></i>
+              <i class="fab fa-x-twitter footer_icon"></i>
+              <i class="fab fa-youtube footer_icon"></i>
+              <i class="fab fa-facebook footer_icon"></i>
+            </div>
+          </div>
+          <div class="col-md-8 mt-5 mb-5 text-center">
+            <span class="footer_foot">&#169 Triber explore Ltd. 2023. All rights reserved</span>
+          </div>
+        </div>
+      </div> 
+    </section>
+    <!-- footer finished -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Explore.js"></script>
+ </body>
+ </html>
